@@ -9,7 +9,10 @@ export default function MovieList({ movies, onAddToList }) {
         </div>
         <div className="card-body">
           {movies.length == 0 ? (
-            <div>Film bulunamadı</div>
+            <div className="text-center text-muted py-4">
+              <i className="bi bi-film fs-1 d-block mb-2"></i>
+              Film bulunamadı
+            </div>
           ) : (
             <div
               id="movie-list"

@@ -14,8 +14,11 @@ export default function WatchList({
               <h2 className="title h5 mb-0">Watch List</h2>
             </div>
             <div className="card-body">
-              {movies.filter((m) => m.is_active).length == 0 ? (
-                <div>Film bulunamadı</div>
+              {movies.length === 0 ? (
+                <div className="text-center text-muted py-4">
+                  <i className="bi bi-film fs-1 d-block mb-2"></i>
+                  Film bulunamadı
+                </div>
               ) : (
                 <div
                   id="movie-list"
